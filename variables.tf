@@ -30,6 +30,6 @@ variable "cmd_script" {
   default     = "https://gist.githubusercontent.com/acanequeisban/e6f0deca58b5e6113fcf20f0fdc9aa29/raw/19ad7609c50ddc5c8888046e8e9c90dbfdcb98a9/vault-install.sh"
 }
 
-variable "ssh_key_public" {"tfaz_id_rsa_pub"}
+variable "ssh_key_public" {}
 
-variable "ssh_key_private" {"tfaz_id_rsa}
+variable "ssh_key_private" {}
