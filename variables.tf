@@ -1,5 +1,5 @@
 variable "location" {
-  default = "West US 2"
+  default = "westeurope"
 }
 
 variable "resource_group_name" {
@@ -11,7 +11,7 @@ variable "sg_name" {
 }
 
 variable "subnet_prefixes" {
-  default = ["10.0.1.0/24", "10.0.2.0/24"]
+  default = ["10.0.8.0/24", "10.0.9.0/24"]
 }
 
 variable "subnet_names" {
@@ -27,9 +27,9 @@ variable "cmd_extension" {
 
 variable "cmd_script" {
   description = "Script to download which can be executed by the custom script extension"
-  default     = "https://gist.githubusercontent.com/anubhavmishra/0b6eb19f38e63bb2eb9d459fd1c53b1d/raw/696eea84b8d12cd099c283439c2c412ae13d308d/vault-install.sh"
+  default     = "https://gist.githubusercontent.com/acanequeisban/e6f0deca58b5e6113fcf20f0fdc9aa29/raw/19ad7609c50ddc5c8888046e8e9c90dbfdcb98a9/vault-install.sh"
 }
 
-variable "ssh_key_public" {}
+variable "ssh_key_public" {"tfaz_id_rsa_pub"}
 
-variable "ssh_key_private" {}
+variable "ssh_key_private" {"tfaz_id_rsa}
