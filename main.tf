@@ -10,8 +10,8 @@ resource "azurerm_resource_group" "default" {
   }
 }
 
-module "network" "vault-demo-network" {
-  source              = "github.com/nicholasjackson/terraform-azurerm-network"
+module "network" {
+  source              = "github.com/acanequeisban/terraform-azurerm-network"
   location            = "${var.location}"
   resource_group_name = "${azurerm_resource_group.default.name}"
   subnet_prefixes     = "${var.subnet_prefixes}"
